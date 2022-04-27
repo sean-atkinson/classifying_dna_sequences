@@ -73,4 +73,32 @@ An example of a DNA sequence and k-mer sequences where k = 3
 ![An example of a DNA sequence and k-mer sequences where k = 3](https://imgur.com/LwI1bH9.jpg)
 <a href="https://towardsdatascience.com/how-to-process-bio-sequences-for-use-in-data-science-7740c199c412">Source</a>
 
+Once you choose your k, you simply divide up the rest of a DNA sequence in chunks of the same length.
 
+Again, for k =3
+
+![Dividing a DNA sequence into chunks of 3](https://imgur.com/HmuWZ8M.jpg)
+<a href="https://towardsdatascience.com/how-to-process-bio-sequences-for-use-in-data-science-7740c199c412">Source</a>
+
+Generally speaking, decomposing a sequence into k-size chunks allows for fast and easy string manipulation.
+
+Once you figure that out, it simply becomes a matter of picking a model type (or two or three) and playing around with the parameters to see what gives you the best results.
+
+For me, that was a Convolutional Neural Network that peaked at a validation accuracy score of 90.04%. It did a little worse on the unseen test data that we were given to predict for the hackathon, but that’s nothing a little parameter tuning can’t fix.
+
+<a id='section_5'></a>
+# In conclusion, I still know next to nothing about DNA but...
+[(Back to table of contents)](#table_of_contents)<br>
+
+Thankfully, that doesn’t prevent me from creating a model that can differentiate between promoter and non-promoter classes. And with a high degree of accuracy too.
+
+Though I can’t help but wonder how much better my models would perform if I knew more about DNA...
+
+<a id='section_6'></a>
+# Datasets and libraries used
+[(Back to table of contents)](#table_of_contents)<br>
+
+<b>Dataset:</b>
+- Custom Hackathon dataset
+
+<b>Libraries:</b> keras, numpy, pandas, sklearn, and tensorflow.
