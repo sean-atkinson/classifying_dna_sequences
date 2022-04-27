@@ -43,7 +43,7 @@ Many methods and tools have been developed for this purpose, and many have achie
 The goal of this hackathon was to create a model of my own to classify whether a given DNA sequence is a promoter sequence or not.
 
 <a id='section_3'></a>
-# And what the heck are we going to do with a promoter??
+# And what the heck are we going to do with a promoter?
 [(Back to table of contents)](#table_of_contents)<br>
 
 Good question!
@@ -57,4 +57,20 @@ We received a selection of papers to read from for ideas on how we might proceed
 Two papers of note caught my attention:
 - <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-9-414#citeas">Pol II promoter prediction using characteristic 4-mer motifs: a machine learning approach </a>by Anwar et al.
 - <a href="https://www.cell.com/molecular-therapy-family/nucleic-acids/fulltext/S2162-2531(19)30161-1?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2162253119301611%3Fshowall%3Dtrue">iProEP: A Computational Predictor for Predicting Promoter </a>by Lai et al.
+
+While I didn’t understand the ins-and-outs of the DNA parts, I most definitely was able to understand the machine learning/NLP parts, and that is how I came across the concept of k-mers.
+
+<a id='section_4'></a>
+# K-mers
+[(Back to table of contents)](#table_of_contents)<br>
+
+In Bioinformatics, k-mers are subsequences of length k contained within a biological sequence. 
+
+What k-mers help you to do is turn DNA into a language of sorts by creating a group of words of k length.
+
+An example of a DNA sequence and k-mer sequences where k = 3
+
+![An example of a DNA sequence and k-mer sequences where k = 3](https://imgur.com/LwI1bH9.jpg)
+<a href="https://towardsdatascience.com/how-to-process-bio-sequences-for-use-in-data-science-7740c199c412">Source</a>
+
 
